@@ -1,5 +1,6 @@
 .container {
     bottom: 40px;
+    box-sizing: border-box;
     color: black;
     font-size: 36px;
     font-family: "Sundry-Regular";
@@ -24,6 +25,7 @@
     border-bottom-right-radius: 40px;
     font-family: "Sundry-Medium";
     font-size: 72px;
+    font-weight: 400;
     overflow: hidden;
     padding: 20px 80px;
   }
