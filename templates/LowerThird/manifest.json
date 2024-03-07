@@ -10,6 +10,11 @@
       "label": "Rolle"
     }
   },
-  "previewData": {},
+  "previewData": {
+    "Cecilie Harritz": {
+      "name": "Cecilie Harritz",
+      "role": "Forperson for foreningen Skole og Forældre i Århus"
+    }
+  },
   "previewImages": ["./assets/img/reference.jpeg"]
 }
