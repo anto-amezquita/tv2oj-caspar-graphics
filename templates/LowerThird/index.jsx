@@ -1,25 +1,18 @@
 import { render, useCaspar, FramerMotion, useFont } from "@nxtedition/graphics-kit";
 import { motion } from "framer-motion";
-import fontRegularSrc from "./assets/fonts/Sundry-Regular.woff2";
-import fontMediumSrc from "./assets/fonts/Sundry-Medium.woff2";
+import './style.css'
+/* import fontRegularSrc from "./assets/fonts/Sundry-Regular.woff2";
+import fontMediumSrc from "./assets/fonts/Sundry-Medium.woff2"; */
 
 function LowerThird() {
   const { data } = useCaspar();
-  const fontRegular = useFont({ fontRegularSrc });
+  /* const fontRegular = useFont({ fontRegularSrc });
   const fontMedium = useFont({ fontMediumSrc });
-
+ */
   return (
     <FramerMotion>
       <motion.div
-        style={{
-          borderBottomRightRadius: 40,
-          bottom: 40,
-          left: 40,
-          lineHeight: "1",
-          overflow: "hidden",
-          position: "absolute",
-          width: 1840,
-        }}
+        className="container"
         initial={{
           opacity: 0,
           y: 100,
@@ -59,30 +52,17 @@ function LowerThird() {
           }}
         >
           <motion.div
-            style={{
-              backgroundColor: "#fff",
-              color: "black",
-              fontSize: 36,
-              fontFamily: "Sundry-Regular",
-              overflow: "hidden",
-              padding: "20px 80px",
-            }}
+            className="container__top"
           >
             {data.role}
           </motion.div>
 
           <motion.div
-            style={{
-              backgroundColor: "#edede5",
-              color: "black",
-              fontSize: 72,
-              fontFamily: "Sundry-Medium",
-              overflow: "hidden",
-              padding: "20px 80px",
-            }}
+            className="container__bottom"
           >
             {data.name}
           </motion.div>
+
         </motion.div>
       </motion.div>
     </FramerMotion>
