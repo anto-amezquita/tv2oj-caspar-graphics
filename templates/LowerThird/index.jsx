@@ -5,8 +5,8 @@ import {
   useFont,
 } from "@nxtedition/graphics-kit";
 import { motion } from "framer-motion";
-import sundryRegular from "./assets/fonts/Sundry-Regular.woff2";
-import sundryMedium from "./assets/fonts/Sundry-Medium.woff2";
+import sundryRegular from "../assets/fonts/Sundry-Regular.woff2";
+import sundryMedium from "../assets/fonts/Sundry-Medium.woff2";
 import "./style.css";
 
 function LowerThird() {
