@@ -1,6 +1,8 @@
-import { render } from '@nxtedition/graphics-kit'
+import { render, useCaspar } from '@nxtedition/graphics-kit'
 
 function Example() {
+  const { data } = useCaspar()
+
   return (
     <div
       style={{
@@ -10,13 +12,13 @@ function Example() {
         width: 1388,
         padding: 20,
         backgroundColor: 'white',
-        borderRadius: 6,
-        fontSize: 70,
+        borderRadius: 8,
+        fontSize: 72,
         fontFamily: 'Arial',
         overflow: 'hidden'
       }}
     >
-      Example
+      {data.text}
     </div>
   )
 }
