@@ -1,9 +1,4 @@
-import {
-  render,
-  useCaspar,
-  FramerMotion,
-  useFont,
-} from "@nxtedition/graphics-kit";
+import { render, useCaspar, FramerMotion, useFont } from "@nxtedition/graphics-kit";
 import { motion } from "framer-motion";
 import fontRegularSrc from "./assets/fonts/Sundry-Regular.woff2";
 import fontMediumSrc from "./assets/fonts/Sundry-Medium.woff2";
