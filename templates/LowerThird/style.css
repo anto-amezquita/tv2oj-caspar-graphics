@@ -1,0 +1,29 @@
+.container {
+    border-bottom-right-radius: 40px;
+    bottom: 40px;
+    color: black;
+    font-size: 36px;
+    font-family: "Sundry-Regular";
+    font-weight: 400;
+    left: 40px;
+    line-height: 1;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1840px;
+    white-space: nowrap;
+  }
+
+  .container__top {
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 20px 80px;
+  }
+
+  .container__bottom {
+    background-color: #edede5;
+    font-family: "Sundry-Medium";
+    font-size: 72px;
+    overflow: hidden;
+    padding: 20px 80px;
+  }
