@@ -6,5 +6,15 @@
       "label": "Text"
     }
   },
-  "previewData": {}
+  "previewData": {
+    "Thierry Henry": {
+      "name": "Thierry Henry",
+      "title": "King of Highbury"
+    },
+    "Bukayo Saka": {
+      "name": "Bukayo Saka",
+      "title": "King of Emirates"
+    }
+  },
+  "previewImages": ["./assets/reference.jpeg"]
 }
