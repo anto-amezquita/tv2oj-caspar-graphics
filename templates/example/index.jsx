@@ -1,28 +1,29 @@
 import { render, useCaspar, FramerMotion, useFont } from "@nxtedition/graphics-kit";
 import { motion } from "framer-motion";
 import fontRegularSrc from './assets/fonts/Sundry-Regular.woff2';
-import fontMediumSrc from './assets/fonts/Sundry-Medium.woff2';
+//import fontMediumSrc from './assets/fonts/Sundry-Medium.woff2';
 
 function Example() {
   const { data } = useCaspar();
   const fontRegular = useFont({ fontRegularSrc });
-  const fontMedium = useFont({ fontMediumSrc });
+  //const fontMedium = useFont({ fontMediumSrc });
 
   return (
     <FramerMotion>
       <motion.div
         style={{
-          position: "absolute",
-          bottom: 80,
-          left: 266,
-          width: 1388,
-          padding: 20,
-          backgroundColor: "white",
+          backgroundColor: "#edede5",
           borderRadius: 0,
+          bottom: 80,
+          color: "black",
           fontSize: 72,
           fontFamily: "Sundry-Regular",
           //fontFamily: "Sundry-Medium",
-          overflow: "hidden"
+          left: 220,
+          overflow: "hidden",
+          padding: 20,
+          position: "absolute",
+          width: 1440
         }}
 
         initial={{
