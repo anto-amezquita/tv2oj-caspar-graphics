@@ -1,0 +1,15 @@
+{
+  "name": "Lower Third",
+  "schema": {
+    "name": {
+      "type": "string",
+      "label": "Navn"
+    },
+    "role": {
+      "type": "string",
+      "label": "Rolle"
+    }
+  },
+  "previewData": {},
+  "previewImages": ["./assets/img/reference.jpeg"]
+}
