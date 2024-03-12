@@ -11,19 +11,14 @@ import "./style.css";
 
 function LowerThird() {
   const { data } = useCaspar();
-
-  const sundry = useFont({
-    src: [
-      { path: sundryRegular, weight: "400" },
-      { path: sundryMedium, weight: "500" },
-    ],
-  });
+  const fontRegular = useFont({ src: sundryRegular });
+  const fontMedium = useFont({ src: sundryMedium });
 
   return (
     <FramerMotion>
       <motion.div
         className="container"
-        style={sundry.style}
+        style={fontRegular.style}
         initial={{
           opacity: 0,
           y: 100,
@@ -66,7 +61,9 @@ function LowerThird() {
           {data.role}
         </motion.div>
 
-        <motion.div className="container__bottom">{data.name}</motion.div>
+        <motion.div className="container__bottom" style={fontMedium.style}>
+          {data.name}
+        </motion.div>
       </motion.div>
     </FramerMotion>
   );
