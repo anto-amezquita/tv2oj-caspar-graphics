@@ -1,0 +1,28 @@
+/* src/BarChart.css */
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 300px;
+  width: 600px;
+  border-left: 2px solid #333;
+  border-bottom: 2px solid #333;
+  padding: 10px;
+  background-color: #fff;
+  margin: 0 auto; /* Center the chart */
+  background-color: #f4f4f4;
+}
+
+.bar {
+  width: 60px;
+  margin: 0 10px;
+  background-color: #4CAF50;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bar span {
+  padding: 5px;
+}
