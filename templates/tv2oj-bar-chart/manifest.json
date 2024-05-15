@@ -1,0 +1,25 @@
+{
+  "name": "Bar Chart",
+  "schema": {
+    "Bar1": {
+      "type": "number",
+      "label": "Bar 1"
+    },
+    "Bar2": {
+      "type": "number",
+      "label": "Bar 2"
+    },
+    "Bar3": {
+      "type": "number",
+      "label": "Bar 3"
+    },
+    "Bar4": {
+      "type": "number",
+      "label": "Bar 4"
+    },
+    "Bar5": {
+      "type": "number",
+      "label": "Bar 5"
+    }
+  }
+}
