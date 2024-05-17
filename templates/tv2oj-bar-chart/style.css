@@ -1,29 +1,56 @@
 /* src/BarChart.css */
+
+.screen {
+  /* Brand colors */
+  --oj-white: #ffffff;
+  --oj-stone-50: #f7f7f3;
+  --oj-stone-100: #edede5;
+  --oj-stone-200: #dbdacc;
+  --oj-stone-300: #afaca5;
+  --oj-stone-400: #8e8881;
+  --oj-stone-500: #746f69;
+  --oj-stone-600: #242424;
+  --oj-stone-700: #141414;
+  --oj-black: #000000;
+  --oj-lime: #e1ff7d;
+  --oj-green: #00aa5a;
+  --oj-dark-green: #235537;
+  --oj-breaking: #ffed00;
+  --oj-pink: #ffc8c8;
+  --oj-red: #ff3200;
+
+  background-color: var(--oj-stone-100, #edede5);
+  color: var(--oj-black, #000000);
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .bar-chart {
   display: flex;
   align-items: flex-end;
-  height: 300px;
-  width: 600px;
-  border-left: 2px solid #333;
-  border-bottom: 2px solid #333;
-  padding: 10px;
-  background-color: #fff;
-  margin: 0 auto; /* Center the chart */
-  background-color: #f4f4f4;
+  height: 540px;
+  border-left: 4px solid var(--oj-stone-400);
+  border-bottom: 4px solid var(--oj-stone-400);
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .bar {
-  width: 60px;
-  margin: 0 10px;
-  background-color: #4CAF50;
+  width: 80px;
+  margin: 0 20px;
+  background-color: var(--oj-green, #00aa5a);
   text-align: center;
-  color: white;
+  color: var(--oj-white, #FFFFFF);
   display: flex;
   justify-content: center;
   align-items: flex-end;
   transform-origin: bottom;
+  font-size: 24px;
 }
 
 .bar span {
-  padding: 5px;
+  padding: 8px;
 }
