@@ -1,12 +1,14 @@
 import React from 'react';
-import { render, useCasparData, FramerMotion } from '@nxtedition/graphics-kit';
+import { render, useCasparData, FramerMotion, useFont } from '@nxtedition/graphics-kit';
 import { motion } from 'framer-motion';
+import sundryRegular from "./assets/fonts/Sundry-Regular.woff2";
+import sundryMedium from "./assets/fonts/Sundry-Medium.woff2";
 import './style.css';
 
 const Bar = ({ height, label, index }) => (
   <motion.div 
     initial={{ scaleY: 0 }}
-    animate={{ scaleY: 1, transition: { delay: index * 0.25 } }}
+    animate={{ scaleY: 1, transition: { delay: index * 0.15 } }}
     className="bar"
     style={{ height }}
     role="img"
@@ -18,6 +20,8 @@ const Bar = ({ height, label, index }) => (
 
 const BarChart = () => {
   const data = useCasparData();
+  const fontRegular = useFont({ src: sundryRegular });
+  const fontMedium = useFont({ src: sundryMedium });
 
   //Construct array from data assuming `useCasparData` returns an object with properties Bar1 to Bar5
   const bars = Object.keys(data)
@@ -31,11 +35,11 @@ const BarChart = () => {
   return (
     <FramerMotion>
       <main className="screen">
-        <div className="bar-chart">
+        <motion.div className="bar-chart" style={fontRegular.style}>
           {bars.map((bar) => (
             <Bar key={bar.index} {...bar} />
           ))}
-        </div>
+        </motion.div>
       </main>
     </FramerMotion>
   );
