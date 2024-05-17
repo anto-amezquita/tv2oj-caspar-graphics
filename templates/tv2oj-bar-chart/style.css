@@ -22,7 +22,7 @@
   box-sizing: border-box;
   background-color: var(--oj-stone-100, #edede5);
   color: var(--oj-black, #000000);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 120px;
   display: flex;
