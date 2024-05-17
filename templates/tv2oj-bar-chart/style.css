@@ -36,12 +36,12 @@
   height: 540px;
   border-left: 4px solid var(--oj-stone-400);
   border-bottom: 4px solid var(--oj-stone-400);
-  padding: 40px;
+  padding: 0 0 40px 20px;
   margin: 0;
 }
 
 .bar {
-  width: 80px;
+  width: 88px;
   margin: 0 20px;
   background-color: var(--oj-green, #00aa5a);
   text-align: center;
