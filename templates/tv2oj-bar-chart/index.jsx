@@ -28,13 +28,13 @@ const BarChart = () => {
 
   return (
     <FramerMotion>
-    <div class="screen">
+    <main class="screen">
       <div className="bar-chart">
         {bars.map((bar) => (
           <Bar key={bar.index} {...bar} />
         ))}
       </div>
-    </div>
+    </main>
     </FramerMotion>
   );
 };
