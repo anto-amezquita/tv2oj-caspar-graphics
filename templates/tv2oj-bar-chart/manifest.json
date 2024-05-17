@@ -20,6 +20,26 @@
     "Bar5": {
       "type": "number",
       "label": "Bar 5"
+    },
+    "Bar6": {
+      "type": "number",
+      "label": "Bar 6"
+    },
+    "Bar7": {
+      "type": "number",
+      "label": "Bar 7"
+    },
+    "Bar8": {
+      "type": "number",
+      "label": "Bar 8"
+    },
+    "Bar9": {
+      "type": "number",
+      "label": "Bar 9"
+    },
+    "Bar10": {
+      "type": "number",
+      "label": "Bar 10"
     }
   }
 }
